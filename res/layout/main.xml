@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<include layout="@layout/header"
+		android:id="@+id/header"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="top"
+        android:layout_weight="1"
+        android:layout_above="@+id/trafikkWeb"
+	/>		
+	
+   	<WebView
+   		android:id="@+id/trafikkWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fb"
+     		/>
+     	
+	<include layout="@layout/footer_buttons"
+		android:id="@+id/fb"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+		android:layout_alignParentBottom="true"
+		android:gravity="center" />
+	
+</RelativeLayout>
+

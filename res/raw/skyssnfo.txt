@@ -1,0 +1,127 @@
+﻿
+Søk på rute:
+ - http://reiseplanlegger.skyss.no/scripts/TravelMagic/TravelMagicWE.dll/StageJSON?cnt=20&query=Nest
+	- Hva er 'cnt'?
+		- max antall resultater som kan returneres.
+	- 'query' søkestreng.
+	- Resultat:
+		- suggestions : ["Nesthus Nord (Voss) [hpl.gruppe]", "Nesthus Sør (Voss) [hpl.gruppe]", "Nesttun (Bergen) [hpl.gruppe]"]
+		
+
+		
+		
+Dissekrert GET request web2051.no:
+------------------------
+http://www.web2051.no/bin/tp/bhftafel.exe/on?
+input=M%E5rdalen
+&time=now
+&boardType=dep
+&REQProduct_list=1%3A1111111110000000&start.x=20&start.y=9&bt_km=1
+		
+Dissekrert GET request skyss.no:
+------------------------
+http://reiseplanlegger.skyss.no/scripts/TravelMagic/TravelMagicWE.dll/svar?
+stagetypefrom=1&stagetypeto=1
+&from=Skjoldh%C3%B8gda+(Bergen)+%5Bholdeplass%5D&to=Nesttun+Terminal+(Bergen)+%5Bhpl.gruppe%5D
+&Date=29.03.2010
+&Time=15:17
+&direction=1
+&changepenalty=1
+&changepause=0
+&GetTR0=1&GetTR1=1&GetTR2=1&GetTR3=1&GetTR4=1&GetTR5=1&GetTR6=1&GetTR7=1&GetGT0=1&GetGT1=1  //disse mapper til forskjellige typer transport - buss, bybane etc.
+&traffictype_all=on
+&linjer=530
+&fromfilter=Skjoldh%C3%B8gda+(Bergen)+%5Bholdeplass%5D
+&tofilter=Nesttun+Terminal+(Bergen)+%5Bhpl.gruppe%5D&
+
+
+1.
+--------------------------------------------------------------------------------------
+GET http://reiseplanlegger.skyss.no:80/scripts/TravelMagic/TravelMagicWE.dll HTTP/1.1
+Host: reiseplanlegger.skyss.no
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-gb,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+Cookie: __utma=17253691.68728321.1265716011.1269860904.1270638200.6; __utmz=17253691.1265716011.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmc=17253691; __utmb=17253691.1.10.1270638200
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+Holdeplass-info:
+--------------------
+http://reiseplanlegger.skyss.no/scripts/TravelMagic/TravelMagicWE.dll/avgangsinfo?hpl=12011512&date=06.04.2010
+
+http://reiseplanlegger.skyss.no:80/scripts/TravelMagic/TravelMagicWE.dll/svar
+POST:
+from	Nesttun Terminal (Bergen) [hpl.gruppe]
+to	
+through	
+throughpause	
+Date	24.10.2010
+Time	13:41
+direction	1
+changepenalty	1
+changepause	0
+GetTR0	1
+GetTR1	1
+GetTR2	1
+GetTR3	1
+GetTR4	1
+GetTR5	1
+GetTR6	1
+GetTR7	1
+GetGT0	1
+GetGT1	1
+traffictype_all	on
+linjer	
+dep1	1
+dep2	
+adv	
+fromfilter	Nesttun Terminal (Bergen) [hpl.gruppe]
+tofilter	
+throughfilter	
+
+IN TEXT:
+from=Nesttun+Terminal+%28Bergen%29+%5Bhpl.gruppe%5D&to=&through=&throughpause=&Date=24.10.2010&Time=13%3A41&direction=1&changepenalty=1&changepause=0&GetTR0=1&GetTR1=1&GetTR2=1&GetTR3=1&GetTR4=1&GetTR5=1&GetTR6=1&GetTR7=1&GetGT0=1&GetGT1=1&traffictype_all=on&linjer=&dep1=1&dep2=&adv=&fromfilter=Nesttun+Terminal+%28Bergen%29+%5Bhpl.gruppe%5D&tofilter=&throughfilter=
+---------------------------------------------------------
+
+
+
+Autocomplete:  
+--------------------
+http://reiseplanlegger.skyss.no:80/scripts/TravelMagic/TravelMagicWE.dll/StageJSON?cnt=20&query=Fant
+
+GET http://reiseplanlegger.skyss.no:80/scripts/TravelMagic/TravelMagicWE.dll/StageJSON?cnt=20&query=ne HTTP/1.1
+Host: reiseplanlegger.skyss.no
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3
+Accept: text/javascript, text/html, application/xml, text/xml, */*
+Accept-Language: en-gb,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 115
+Proxy-Connection: keep-alive
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.6.1
+Referer: http://reiseplanlegger.skyss.no/scripts/TravelMagic/TravelMagicWE.dll
+Cookie: __utma=17253691.68728321.1265716011.1269860904.1270638200.6; __utmz=17253691.1265716011.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmc=17253691; __utmb=17253691.1.10.1270638200
+
+
+
+({query: "Nest", 
+		suggestions: ["Nesthus Nord (Voss) [hpl.gruppe]",
+				"Nesthus S\xF8r (Voss) [hpl.gruppe]", 
+				"Nesttun (Bergen) [hpl.gruppe]", 
+				"Nesttun Terminal (Bergen) [hpl.gruppe]", 
+				"Nesttunbrekka (Bergen) [hpl.gruppe]", 
+				"Nesttunbrekka [adresse]", 
+				"Nesttunhalsen [adresse]", 
+				"Nesttunkollen [adresse]", 
+				"Nesttuntr\xE6et [adresse]", 
+				"Nesttunvegen [adresse]"]}); 

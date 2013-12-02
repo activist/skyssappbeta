@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+    <ImageView 
+		android:id="@+id/HeaderImageView" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="top"
+        android:layout_weight="2"
+		android:background="@drawable/skyss_logo"
+	/>    	
+
+        
+	<com.transit.activites.view.StopMapView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/mapview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:clickable="true"
+	    android:apiKey="0NlATZewgiHkmD-vHZDrXcu-Q5sPDOpktjGxe-Q"
+	/>
+	
+	<include layout="@layout/footer_buttons"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+		android:layout_alignParentBottom="true"
+		android:gravity="center" />
+</RelativeLayout>
+<!--  real  android:apiKey="0NlATZewgiHlicfWbmteXZU34ueTjihGrAuLNrQ"-->
+<!-- test value   android:apiKey="0NlATZewgiHkmD-vHZDrXcu-Q5sPDOpktjGxe-Q"-->

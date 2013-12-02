@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical">
+	  
+	 <LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dp">
+		
+		
+		<TextView 
+			android:id="@+id/searchFromStopText"
+			android:text="@string/searchFromStopText"
+			android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            />
+			
+		<AutoCompleteTextView
+			android:id="@+id/searchFromStop"
+			android:textSize="10dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			/>
+			
+		<TextView 
+			android:id="@+id/searchToStopText"
+			android:text="@string/searchToStopText"
+			android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            />
+		
+		<AutoCompleteTextView
+			android:id="@+id/searchToStop"
+			android:textSize="10dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			/>
+		
+	</LinearLayout>
+			
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="5dp">
+		
+		<TextView 
+			android:id="@+id/dateText"
+			android:text="@string/searchDateText"
+			android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+			android:paddingRight="5dp"
+			/>
+			
+        <EditText
+        	android:id="@+id/dateEditText"
+        	android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_weight="1"
+        	/>
+        
+        <Button
+        	android:id="@+id/buttonPickDate"
+        	android:text="@string/pickDateText"
+	        android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            />
+            
+	</LinearLayout>
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="5dp">
+		
+		<TextView 
+			android:id="@+id/timeText"
+			android:text="@string/searchTimeText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="5dp"
+        	/>
+        
+        <EditText
+        	android:id="@+id/timeEditText"
+        	android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:padding="3dp"
+            android:maxLength="5"
+            android:layout_weight="1" 
+        	/>
+            
+        <Button
+        	android:id="@+id/buttonPickTime"
+        	android:text="@string/pickTimeText"
+	        android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            />
+            
+	</LinearLayout>
+	
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="center"
+		android:padding="5dp">
+		
+		<TextView 
+			android:id="@+id/routeNoText"
+			android:text="@string/routeNumberText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="5dp"
+        	/>
+        
+        <EditText
+        	android:id="@+id/routeNoEditText"
+        	android:layout_width="75px" 
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:padding="3dp"
+            />
+            
+	</LinearLayout>
+	
+	<Button
+       	android:id="@+id/buttonSearch"
+       	android:text="@string/buttonSearch"
+        android:layout_width="100px" 
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20px"
+        />      
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="skyss_color">#D2492A</color>
+	<color name="white">#FFFFFF</color>
+	<color name="darkgray">#222</color>
+	<color name="lightgray">#555</color>
+
+	<style name="SkyssTheme" parent="android:Theme.NoTitleBar.Fullscreen">
+	    <item name="android:windowBackground">@color/white</item>
+	    <item name="android:colorBackground">@color/white</item>
+	    <item name="android:textAppearance">@style/SkyssFont</item>
+   	    <item name="android:listViewStyle">@style/SkyssListView</item>
+   	    <item name="android:listSeparatorTextViewStyle">@style/SkyssListSeparatorTextViewStyle</item>
+   	    
+	</style>
+	
+    <style name="TextViewGray" parent="android:Widget.TextView">            
+        <item name="android:background">@color/white</item>        
+        <item name="android:textColor">@color/darkgray</item>
+   	    <item name="android:colorForeground">@color/darkgray</item>
+    </style>
+    
+	<style name="SkyssListView" parent="android:Widget.ListView">
+	    <item name="android:windowBackground">@color/white</item>
+	    <item name="android:background">@color/white</item>
+	    <item name="android:foreground">@color/darkgray</item>
+	    <item name="android:cacheColorHint">@color/lightgray</item>
+	    <item name="android:textColor">@color/darkgray</item>
+	    <!-- Todo add bg image ? -->
+	</style>
+	
+	 <style name="SkyssListSeparatorTextViewStyle" parent="@android:attr/listSeparatorTextViewStyle">
+	    <item name="android:textColor">@color/darkgray</item>
+	 </style>
+	
+	<style name="SkyssFont" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">@color/darkgray</item>
+	</style>
+	
+
+
+</resources>

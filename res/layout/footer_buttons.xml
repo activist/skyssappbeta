@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/footerButtons"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="horizontal"
+  android:weightSum="4"
+  android:layout_alignParentBottom="true">
+  
+  
+<!--    <ImageView -->
+<!--		android:id="@+id/ButtonFillLeft" -->
+<!--		android:layout_width="fill_parent" -->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:layout_toLeftOf="@+id/buttonHelp"-->
+<!--		android:layout_gravity="fill"-->
+<!--		android:layout_marginRight="-1dip"-->
+<!--		android:background="@drawable/buttonfill"/>  -->
+  
+	<Button
+		android:id="@+id/buttonHelp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="0dip"
+		android:layout_weight="1"
+		android:background="@drawable/selector_btn_traffic"
+        />
+	<Button
+		android:id="@+id/buttonDepartureList"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="0dip"
+		android:layout_weight="1"
+		android:background="@drawable/selector_btn_nearby"
+        />
+	
+	<Button
+		android:id="@+id/buttonGoToMap"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="0dip"
+		android:layout_weight="1"
+		android:background="@drawable/selector_btn_map"
+        />
+	        
+	<Button
+		android:id="@+id/buttonGoFav"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="0dip"
+		android:layout_weight="1"
+		android:background="@drawable/selector_btn_favorites"
+        />
+
+<!--    <ImageView -->
+<!--		android:id="@+id/ButtonFillRight" -->
+<!--		android:layout_width="fill_parent" -->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:layout_toRightOf="@+id/buttonGoFav"-->
+<!--		android:layout_gravity="fill"-->
+<!--		android:layout_marginRight="-1dip"-->
+<!--		android:background="@drawable/buttonfill"/>  -->
+  
+</LinearLayout>

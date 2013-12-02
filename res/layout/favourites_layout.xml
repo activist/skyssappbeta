@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+
+	<include layout="@layout/header"
+		android:id="@+id/fav_header"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="top"
+        android:layout_weight="1"
+	/>			
+		
+	<ListView 
+		android:id="@+id/android:list"
+		style="@style/SkyssListView"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+       	android:layout_below="@+id/fav_header"
+       	android:layout_above="@+id/fav_footer_buttons"
+		/>
+		
+	<include layout="@layout/footer_buttons"
+		android:id="@+id/fav_footer_buttons"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_centerInParent="true"
+		android:layout_alignParentBottom="true"
+		android:gravity="center" />
+</RelativeLayout>

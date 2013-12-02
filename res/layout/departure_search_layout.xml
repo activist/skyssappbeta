@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	
+    <ImageView 
+		android:id="@+id/HeaderImageView2" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="top"
+		android:paddingTop="4dp"
+		android:paddingBottom="10dp"
+		android:background="@drawable/skyss_logo"/>
+	
+	
+	<TextView 
+		android:id="@+id/searchFromStopText"
+		android:text="@string/searchFromStopText"
+		android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+           android:textStyle="bold"
+           android:textSize="16dip"
+           android:singleLine="true"
+           android:layout_below="@+id/HeaderImageView2"
+          />
+	<AutoCompleteTextView
+		android:id="@+id/searchFromStop"
+		android:textSize="12dp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:layout_below="@+id/searchFromStopText"
+		/>
+	        
+   	    <ImageButton 
+			android:id="@+id/buttonSearch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="left" 
+	        android:src="@drawable/icmenu_search"
+	        android:onClick="onClick"
+	        android:focusable="true"
+	        android:layout_below="@+id/searchFromStop"
+		/>
+   	    <ImageButton 
+			android:id="@+id/deleteTextBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="right" 
+	        android:src="@drawable/icmenu_delete"
+	        android:onClick="onClick"
+	        android:focusable="true"
+	        android:layout_below="@+id/searchFromStop"
+	        android:layout_toRightOf="@+id/buttonSearch"
+		/>
+		
+		<TextView
+		android:id="@+id/labelRouteText"
+		android:text="Rutenummer"
+		android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+           android:textStyle="bold"
+           android:textSize="16dip"
+           android:singleLine="true"
+           android:layout_below="@+id/deleteTextBtn"
+          />
+
+   	    <EditText 
+			android:id="@+id/editRouteText"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:numeric="integer"
+	        android:layout_below="@+id/labelRouteText"
+		/>
+	<include layout="@layout/footer_buttons"
+       	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+		android:layout_alignParentBottom="true"
+		android:gravity="center" />
+</RelativeLayout>

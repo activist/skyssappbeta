@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">SkyssApp Beta</string>
+    <string name="arrives"> - er fremme om</string>
+    <string name="minutes"> minutter.</string>
+	<color name="white">#FFFFFF</color>
+	<color name="ccccc">#CCCCCC</color>
+	<color name="c333333">#333333</color>
+	<color name="c444444">#444444</color>
+	<color name="skysscolor">#D2492A</color>
+	
+    <string name="searchHeaderString">Rutesøk</string>
+    <string name="searchDateText">Dato</string>
+    <string name="searchTimeText">Tid</string>
+    <string name="searchFromStopText">Fra adresse/sted</string>
+   	<string name="searchToStopText">Til</string>
+	<string name="pickDateText">Velg dato</string>
+    <string name="pickTimeText">Velg tid </string>                    
+	<string name="buttonSearch">Søk</string>
+	<string name="myStopsText">Mine favoritter</string>
+	<string name="routeNumberText">Rutenr. </string>
+	<string name="main_no_stops">Fant ingen stopp med angitt navn.</string>
+	<string name="myStopsAddText">Lagre til favoritter</string>
+
+	<string name="hjelpText">
+		<p>
+		<b>Hvordan bruker jeg denne appen?</b>\n 
+			Du kan enten finne dine favoritt holdeplasser ved å søke etter avganger, eller ved å gå inn på \"Kartvisning\".
+			
+			Velger du \"Kartvisning\" kan du klikke på holdeplassene og se avgangene fra den aktuelle holdeplassen.\n\n
+			
+			Du søker ellers opp avganger på holdeplasser under \"Avganger\" og lagrer dine favoritt holdeplasser til \"Favoritter\". Neste gang du benytter appen
+			trenger du kun å gå inn på \"Favoritter\" for å se de neste avgangene for dine favoritt-holdeplasser. 
+		</p>\n\n
+		
+		<p>
+		<b>Hvorfor oppdateres ikke holdeplassene når jeg beveger meg rundt på kartet?</b>\n
+			Sørg for at du har zoomet langt nok inn. Dersom du har zoomet for langt ut vil ikke kartet oppdateres da
+			datamengden kan være svært stor.
+		</p>\n\n
+		
+		<p>
+		<b>Hvordan ser jeg holdeplasser i nærheten av der jeg befinner meg?</b>\n
+			Trykk på telefonens Meny-knapp når du er i kartvisningen. Funksjonen kan være noe unøyaktig om du ikke har GPSen skrudd på.
+		</p>\n\n
+		
+		<p>
+		<b>Er det Skyss som står bak denne appen?</b>\n
+			Nei, dette er en uoffisell applikasjon som henter rutedata fra Skyss sine websider.
+			Disse dataene er igjen levert av <a href="www.datagrafikk.no">DataGrafikk A/S.</a>
+			Tanken er at denne appen blir værende i beta til Skyss eller Datagrafikk lager en offisiell app. 
+			Med andre ord kan den bli i beta ganske lenge.
+		</p>\n\n
+		
+		<p>
+		<b>Er det live rutetider?</b>\n
+			Nei, Skyss holder for tiden på med testing av live-rutetider i Nordhordaland, men foreløpig er dette ca. tider.
+		</p>\n\n
+		
+		<p>
+		<b>Holdeplassen borti gaten her kommer ikke automatisk opp når jeg prøver å søke den opp. Hvorfor?</b>\n
+			Prøv å søke på et gatenavn i nærheten. Hvis ikke det hjelper er det antakeligvis fordi holdeplassen er oversett. 
+			Hvis du vet navnet, men problemet er at den ikke kommer automatisk opp kan du prøve å skrive inn hele navnet for så å søke det opp likevel. 
+			Send evt en mail til <a href="mailto:skyssapp@gmail.com">skyssapp@gmail.com</a> og fortell om ditt problem!
+		</p>\n\n
+		
+		<p>
+		<b>Hvorfor kommer det opp flere holdeplasser med samme navn når jeg søker?</b>\n
+			Dette er typisk samme holdeplassen, men i forskjellig retning. Kommer f.eks \"Nesttun\" opp to ganger vil det ene valget være mot sentrum 
+			og det andre være i retning Fana. Teksten under navnet på holdeplassen viser neste avgang og kan fortelle deg noe om retningen.
+		</p>\n\n
+		
+		<p>
+		<b>Hvorfor finner den ikke noen holdeplasser i nærheten av gaten jeg skrev inn?</b>\n 
+			Ikke godt å si. Se siste spørsmål.
+		</p>\n\n
+		
+		<p>
+		<b>Hvorfor kan jeg ikke søke etter rutenummer/overganger?</b>\n
+			Se siste spørsmål!
+		</p>\n\n
+		
+		<p>
+		<b>Denne appen virker jo ikke! / Jeg fant en bug, hva gjør jeg? / Jeg har et forslag: Kan ikke du lage denne appen sånn at jeg kan.. ?</b>\n
+			Dette er en beta. Noen ting virker ikke og andre ting vil aldri bli laget. Men send en mail til <a href="mailto:skyssapp@gmail.com">skyssapp@gmail.com</a> 
+			om problemet og det blir kanskje fikset.
+		</p>\n\n
+	</string>
+
+</resources>

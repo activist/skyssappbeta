@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:textColor="@color/white"
+  android:orientation="vertical">
+    
+	<include layout="@layout/header"
+		android:id="@+id/fav_header"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="top"
+        android:layout_weight="1"
+	/>	
+	
+	<TextView
+	   	android:id="@+id/stopNameHeader"
+	   	android:layout_height="wrap_content"
+	    android:layout_width="fill_parent" 
+	    android:layout_weight="1"
+	    android:textStyle="bold"
+	    android:textSize="16dip"
+	    android:singleLine="true"
+	    android:layout_below="@+id/fav_header"
+      />  
+	
+     <Button
+       	android:id="@+id/buttonAddToMyStops"
+       	android:text="@string/myStopsAddText"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stopNameHeader"
+     />
+    
+	<ListView 
+		android:id="@+id/android:list"
+		android:layout_width="wrap_content" 
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:layout_below="@+id/buttonAddToMyStops"
+		android:layout_above="@+id/buttonSeeMoreDepartures"
+		/>
+	
+	<Button
+       	android:id="@+id/buttonSeeMoreDepartures"
+       	android:text="Se flere avganger"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       />
+        
+	<include layout="@layout/footer_buttons"
+       	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+		android:layout_alignParentBottom="true"
+		android:gravity="center" />	
+</RelativeLayout>
